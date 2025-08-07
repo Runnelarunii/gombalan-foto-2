@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gombalan</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ff9aa2, #ffb6b9);
+      font-family: 'Comic Sans MS', cursive;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .gombal {
+      font-size: 24px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      border-radius: 20px;
+    }
+    button {
+      background: red;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 18px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>💖 Gombalan untuk kamu yah💖</h3>
+    <h1>Inul</h1>
+    <img src="B25006A6-DA8A-4B94-8F29-30381EF16749.JPG" alt="Foto Cewek Cantik">
+    <div class="gombal" id="gombalText">
+      Kamu tahu gak kenapa aku suka senja? Karena warnanya mirip senyuman kamu.
+    </div>
+    <button onclick="gantiGombal()">Gombal Lagi?💘</button>
+  </div>
+
+   <!-- Embed Musik SoundCloud -->
+  <iframe width="100%" height="120" scrolling="no" frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/barbarian92/coboy-junior-kamu&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+  </iframe>
+
+
+  <script>
+    const gombalan = [
+      "Kamu tahu gak kenapa aku suka senja? Karena warnanya mirip senyuman kamu.",
+      "Tau ngga? Dari Skala 1 - 10, Rasa kagumku itu ke kamu hanya 6, ENAMMBAHH Teruss!..aw aw aw.. kiw kiw",
+      "Kamu itu seperti lagu, bikin aku selalu ingin bilang so baby pls be mine, pls be mine oh mine.",
+      "Kalau kamu pelangi, aku rela jadi hujan, biar kita ketemu di ujung langit.",
+      "Kalau kamu jadi air, aku mau jadi galon. Biar kamu terus-terusan isi hidupku.",
+      "Kamu itu kayak password Wi-Fi, bikin aku penasaran terus.",
+      "Kamu mirip bintang jatuh, sekali lihat langsung minta sesuatu: kamu!",
+      "Kalau kamu jadi malam, aku rela jadi bulan yang nemenin kamu terus."
+    ];
+    function gantiGombal() {
+      const random = Math.floor(Math.random() * gombalan.length);
+      document.getElementById('gombalText').innerText = gombalan[random];
+    }
+  </script>
+</body>
+</html>
